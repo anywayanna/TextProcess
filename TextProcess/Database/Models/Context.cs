@@ -10,9 +10,9 @@ namespace TextProcess.Database.Models
    
     public class Context : DbContext
     {
-        private string _dbPath;
+        private static string _dbPath = "LocalConnection";
 
-        public Context(string dbPath) : base(dbPath) { }
+        public Context() : base(_dbPath) { }
 
         public DbSet<Dictionary> dictionary { get; set; }
 

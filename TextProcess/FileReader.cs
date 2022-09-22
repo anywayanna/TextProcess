@@ -12,12 +12,12 @@ namespace TextProcess
         public void Reader()
         {
 
-            new Database.Database().Create();
+            new Database.Database().Connection();
             new Database.Database().Write();
 
             return;
 
-            string filePath = @"C:\Users\Mvideo\source\repos\TextProcess\Sport_article.txt";
+            string filePath = @"TextProcess\Sport_article.txt";
             string[] words;
             char[] chars = new char[] { ' ', '\r', '\n' };
 
